@@ -119,3 +119,55 @@ docker push uimarshall/dockerize-react
 Docker compose is a tool that help us to `Define` and `Manage` a `multi-container` docker applications.
 
 It uses a `yml` file to configure `Services`, `Networks` and `Volumes` for our application. Enabling us to run and scale the application with a single command (`docker compose up`).
+
+```
+npm create vite@latest vite-project
+```
+
+```
+cd vite-project
+```
+
+Create `yml` file.
+
+```
+docker init
+```
+
+Follow prompt to answer the below questions.
+
+- Choose `Node` as application platform or your choice depending on tech stack.
+- Choose `version`.
+- Choose `npm`.
+- Choose `No` to `run npm build` before starting your server.
+- Use `npm run dev` to start the app as a choice command.
+- Specify the port.
+
+On windows, open your terminal as administrator to avoid `Access denied`
+
+```
+docker compose up
+```
+
+On linux
+
+```
+sudo docker compose up
+```
+
+Automate changes in the code
+
+```
+docker compose watch
+```
+
+The `docker compose watch` listen to changes in our app or code and performs operations such as
+
+- Re-building the app
+- Re-running the container
+
+It does the following🧮
+
+- sync
+- rebuild
+- sync-restart
