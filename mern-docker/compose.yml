@@ -2,6 +2,7 @@
 version: "3.8"
 
 # define the services/containers to be run
+# 3 services will run => web, api and database (the web will make a request, the `API` will intercept the request and communicate with the `Database` to fetch data and give a `Response` to the web client)
 services:
   # define the frontend service
   # we can use any name for the service. A standard naming convention is to use "web" for the frontend
