@@ -60,7 +60,8 @@ Build the image
 docker build -t dockerize-react .
 ```
 
-Containerize the app
+Containerize the app (The image we build is the container that contains all the files of our application):
+Therefore running the image means running the container and copying all the files to that container.
 
 ```
 docker run dockerize-react
